@@ -57,15 +57,16 @@
    <br><br>
 
    Have you had problems with noise in the last few months? (Tick for Yes)
-    <input name="noiseProblem" type="checkbox" value="Yes"/> <br>
+   <input type="hidden" id="test1" value="No"  checked>
+   <input type="checkbox" id="test" value="Yes" >
+     <br> 
    If so, does it match the sounds heard in the videos linked above? (Tick for Yes) 
     <input name="sameProblem" type="checkbox" value="Yes"/> <br><br>
    If the noise you hear matches the one in the videos, are you happy for your apartment number to be mentioned as being affected by this issue in a mail to managment? (Tick for Yes)
     <input name="canBeReferenced" type="checkbox" value="Yes"/> <br><br>
    If you have been hearing noise, but it does not sound like the one in the videos. Can you please describe what you hear? 
    <br>
-   <textarea cols="81" name="difNoiseDescription"  rows="10">
-   </textarea> 
+   <textarea cols="81" name="difNoiseDescription"  rows="10"></textarea> 
    <br> 
     <br>
   Have you already raised a noise complaint with with the management office? (Tick for Yes)
@@ -74,8 +75,7 @@
 
   If so, and you are happy to do so, please share the details of the complaint you made below?   
   <br>
-    <textarea cols="81" name="complaintDetails"  rows="10">
-    </textarea> 
+    <textarea cols="81" name="complaintDetails" rows="10"></textarea> 
   <br> 
 
   Would you be happy to have to this complaint referenced in a group mail to managment?  (Tick for Yes) 
@@ -116,11 +116,6 @@
          complaintCanBeReferenced: complaintCanBeReferenced,
          difNoiseDescription: difNoiseDescription,
         });
-
-        analytics.track("User Registered", {
-  plan: "Pro Annual",
-  accountType: "Facebook"
-});
       
         analytics.track("Form Submitted", {
          apt: apt,
