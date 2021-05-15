@@ -93,7 +93,7 @@
         var floor = form["floor"].value;
         var firstName = form["firstName"].value;
         var email = form["email"].value;
-        
+        var noiseProblem= form["noiseProblem"].value;
         var sameProblem = form["sameProblem"].value;
         var canBeReferenced = form["canBeReferenced"].value;
         var complainedAlready = form["complainedAlready"].value;
@@ -101,10 +101,35 @@
         var complaintDetails = form["complaintDetails"].value;
         var difNoiseDescription = form["difNoiseDescription"].value;
 
-        if (form["noiseProblem"].value = 'on'){
+        
+        if (noiseProblem = 'on'){
           var noiseProblem = 'Yes'
         }else{
           var noiseProblem = 'No'
+        }
+
+        if (sameProblem = 'on'){
+          var sameProblem = 'Yes'
+        }else{
+          var sameProblem = 'No'
+        }
+
+        if (canBeReferenced = 'on'){
+          var canBeReferenced = 'Yes'
+        }else{
+          var canBeReferenced = 'No'
+        }
+
+        if (complainedAlready = 'on'){
+          var complainedAlready = 'Yes'
+        }else{
+          var complainedAlready = 'No'
+        }
+
+        if (complaintCanBeReferenced = 'on'){
+          var complaintCanBeReferenced = 'Yes'
+        }else{
+          var complaintCanBeReferenced = 'No'
         }
 
         analytics.identify( apt + email, {
@@ -136,8 +161,6 @@
         });
       
         confirm('Thank you! Hopefully we get to the bottom of this soon.');
-
-
 
       }
    </script>
