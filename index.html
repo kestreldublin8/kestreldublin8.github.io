@@ -77,11 +77,12 @@
   <input name="complaintCanBeReferenced" required="" size="75" type="text"/> 
     <br><br>
 
-     
-
 </form> 
+
+
     <script type="text/javascript">
       function identify(e){
+        e.preventDefault();
         var form = e.target;
         var apt = form["aptno"].value;
         var floor = form["floor"].value;
@@ -94,7 +95,7 @@
         var complaintDetails = form["complaintDetails"].value;
         var complaintCanBeReferenced = form["complaintCanBeReferenced"].value;
 
-        analytics.identify( {
+        analytics.identify( 'test', {
          form = e.target,
          apt = apt,
          floor = floor,
@@ -110,6 +111,6 @@
       }
     
        
-</script>
+   </script>
   </body>
 </html>
