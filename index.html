@@ -57,9 +57,7 @@
    <br><br>
 
    Have you had problems with noise in the last few months? (Tick for Yes)
-   <input type="hidden" id="test1" value="No"  checked>
-   <input type="checkbox" id="test" value="Yes" >
-     <br> 
+    <input name="noiseProblem" type="checkbox" value="Yes"/> <br>
    If so, does it match the sounds heard in the videos linked above? (Tick for Yes) 
     <input name="sameProblem" type="checkbox" value="Yes"/> <br><br>
    If the noise you hear matches the one in the videos, are you happy for your apartment number to be mentioned as being affected by this issue in a mail to managment? (Tick for Yes)
@@ -95,13 +93,19 @@
         var floor = form["floor"].value;
         var firstName = form["firstName"].value;
         var email = form["email"].value;
-        var noiseProblem = form["noiseProblem"].value;
+        
         var sameProblem = form["sameProblem"].value;
         var canBeReferenced = form["canBeReferenced"].value;
         var complainedAlready = form["complainedAlready"].value;
-        var complaintDetails = form["complaintDetails"].value;
         var complaintCanBeReferenced = form["complaintCanBeReferenced"].value;
+        var complaintDetails = form["complaintDetails"].value;
         var difNoiseDescription = form["difNoiseDescription"].value;
+
+        if (form["noiseProblem"].value = 'on'){
+          var noiseProblem = 'Yes'
+        }else{
+          var noiseProblem = 'No'
+        }
 
         analytics.identify( apt + email, {
          apt: apt,
