@@ -7,6 +7,7 @@ body{
 
 video{
     width: 90%;
+    align-items: center;
 }
 
 form{
@@ -17,6 +18,6 @@ form{
     /* For mobile phones: */
     .form {
       width: 90%;
-      background-color: red;
+      font-size: 16px;
     }
   }
