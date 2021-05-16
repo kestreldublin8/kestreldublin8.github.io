@@ -6,12 +6,16 @@ body{
 }
 
 video{
-    width:auto;
+    width: 90%;
+}
+
+form{
+    font-size: 16px;
 }
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    .body {
+    .form {
       width: 90%;
       background-color: red;
     }
