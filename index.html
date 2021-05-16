@@ -16,9 +16,9 @@
     <h1>Kestrel Building Residents </h1>
     <h2>Noise Issue 2021</h2>
     
-    <p>Hi all!<br> 
-       Hoping for some help here.</p> 
-      
+    <p>Thanks for your help here!</p> 
+    
+    <!--   
     <p>For the last few months myself and other residents across multiple floors in the Kestrel Building have been experiencing a problem with a significant and persistent noise. <br>
       It sounds like someone jumping on the floors above or something constantly being dropped, but it could be an issue with pipes, vents or lift. It has been occurring basically 7 days a week and at all hours. Usually lasting for 45min-1 hour sessions.
       Most frequently around 8am-9am, lunchtime, and various times between 6pm and midnight. (Although there has been multiple 1 am, 5 am and 7 am instances too.)
@@ -34,6 +34,7 @@
        So if you think the noise in the video or the times described suggest it could be the result of something you are doing in your apartment, we would really appreciate it if you could reach out to <a href="mailto:kestreldublin8@gmail.com">kestreldublin8@gmail.com</a> so that we can test that theory and rule it out.
        (I would be happy to personally pay for gym mats if this turns out to be the root of the noise).
        <br>
+    -->
 
     <h3>Examples of the Noise</h3>
     <p>The noise is pure bass, so you will need headphones or decent speakers in order to hear it correctly in the videos. You won't hear it through a phone's speaker. <br>
@@ -117,7 +118,7 @@
          complaintDetails: complaintDetails,
          complaintCanBeReferenced: complaintCanBeReferenced,
          difNoiseDescription: difNoiseDescription,
-        });
+        },{context: {ip: '0.0.0.0'}});
       
         analytics.track("Form Submitted", {
          apt: apt,
@@ -131,7 +132,7 @@
          complaintDetails: complaintDetails,
          complaintCanBeReferenced: complaintCanBeReferenced,
          difNoiseDescription: difNoiseDescription,
-        });
+        },{context: {ip: '0.0.0.0'}});
       
         confirm('Thank you! Hopefully we get to the bottom of this soon.');
 
