@@ -22,7 +22,6 @@ input[type=text] {
   margin: 0;
   box-sizing: border-box;
   font-size: 20px;
-  background-color: lightgray;
 }
 
 input[type=email] {
@@ -31,13 +30,11 @@ input[type=email] {
   margin: 0;
   box-sizing: border-box;
   font-size: 20px;
-  background-color: lightgray;
 }
 
 textarea{
     width: 100%;
     font-size: 20px;
-    background-color: lightgray;
 }
 
 label {
