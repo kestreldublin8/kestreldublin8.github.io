@@ -13,5 +13,6 @@ video{
     /* For mobile phones: */
     body {
       width: 90%;
+      background-color: red;
     }
   }
