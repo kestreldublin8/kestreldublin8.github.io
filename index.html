@@ -84,7 +84,7 @@
         <label for="complainedAlready">Have you already raised a noise complaint with with the managment office? (Tick for Yes)</label> 
         <br>
 
-      If so, and you are happy to do so, please share the details of the complaint you made below?   
+        If so, and you are happy to do so, please share the details of the complaint you made below?   
       <br>
         <textarea cols="81" name="complaintDetails" rows="10"></textarea> 
       <br> 
@@ -117,21 +117,6 @@
         var complaintCanBeReferenced = form["complaintCanBeReferenced"].checked;
         var complaintDetails = form["complaintDetails"].value;
         var difNoiseDescription = form["difNoiseDescription"].value;
-
-
-        analytics.identify( apt + email, {
-         apt: apt,
-         floor: floor,
-         firstName: firstName,
-         email: email,
-         noiseProblem: noiseProblem,
-         sameProblem: sameProblem,
-         canBeReferenced: canBeReferenced,
-         complainedAlready: complainedAlready,
-         complaintDetails: complaintDetails,
-         complaintCanBeReferenced: complaintCanBeReferenced,
-         difNoiseDescription: difNoiseDescription,
-        },{context: {ip: '0.0.0.0'}});
       
         analytics.track("Form Submitted", {
          apt: apt,

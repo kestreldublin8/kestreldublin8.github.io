@@ -3,7 +3,6 @@
 body{
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 16px;
-    background-color: red;
 }
 
 video{
@@ -14,6 +13,11 @@ video{
 form{
     font-size: 16px;
 }
+
+textarea{
+    width: 100%;
+}
+
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
