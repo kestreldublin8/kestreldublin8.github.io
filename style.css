@@ -54,7 +54,12 @@ input[type=checkbox] {
   width: 30px;
   height: 30px;
 }
+
 .infoform h4{
+    font-size: 20px;
+}
+
+.infoform h5{
     font-size: 20px;
 }
 
