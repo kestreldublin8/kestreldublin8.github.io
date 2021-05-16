@@ -63,6 +63,10 @@ input[type=checkbox] {
     font-size: 20px;
 }
 
+.infoform h6{
+    font-size: 30px;
+}
+
 input[type=submit] {
   background-color: #4CAF50;
   border: none;
